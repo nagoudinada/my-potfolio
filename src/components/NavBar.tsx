@@ -2,7 +2,7 @@ import React from 'react'
 
 function NavBar() {
   return (
-    <nav className="flex flex-row justify-between items-center p-8 px-12 bg-white text-black drop-shadow-md">
+    <nav className="flex flex-row justify-between items-center py-6 px-12 bg-white text-black drop-shadow-md w-full">
       <p className="font-bold text-lg">Nada.dev</p>
       <div className="flex gap-4 transition delay-150 font-semibold">
         <a href="#Home" className=" hover:text-blue">
