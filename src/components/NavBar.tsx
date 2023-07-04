@@ -1,25 +1,50 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-scroll";
 
 function NavBar() {
   return (
-    <nav className="flex flex-row justify-between items-center py-6 px-12 bg-white text-black drop-shadow-md w-full">
+    <nav className="fixed flex flex-row justify-between items-center py-6 px-12 bg-white text-black drop-shadow-md w-full">
       <p className="font-bold text-lg">Nada.dev</p>
-      <div className="flex gap-4 transition delay-150 font-semibold">
-        <a href="#Home" className=" hover:text-blue">
+      <div className="flex gap-4 font-semibold">
+        <Link
+          to="Home"
+          spy={true}
+          smooth={true}
+          duration={500}
+          className="hover:text-blue"
+        >
           Home
-        </a>
-        <a href="#About" className=" hover:text-blue">
+        </Link>
+        <Link
+          to="About"
+          spy={true}
+          smooth={true}
+          duration={500}
+          className="hover:text-blue"
+        >
           About
-        </a>
-        <a href="#Projects" className=" hover:text-blue">
+        </Link>
+        <Link
+          to="Projects"
+          spy={true}
+          smooth={true}
+          duration={500}
+          className="hover:text-blue"
+        >
           Projects
-        </a>
-        <a href="#Contact" className=" hover:text-blue">
+        </Link>
+        <Link
+          to="Contact"
+          spy={true}
+          smooth={true}
+          duration={500}
+          className="hover:text-blue"
+        >
           Contact
-        </a>
+        </Link>
       </div>
     </nav>
   );
 }
 
-export default NavBar
+export default NavBar;
