@@ -105,7 +105,7 @@ function App() {
             <div className="w-1/2 overflow-hidden">
               <a className="" href="/">
                 <div
-                  className="rounded-2xl h-64 bg-cover bg-top bg-no-repeat "
+                  className="rounded-2xl border-2 border-gray-50 h-64 bg-cover bg-top bg-no-repeat ease-in-out duration-[10000ms] hover:bg-bottom"
                   style={{ backgroundImage: `url(${project1})` }}
                 ></div>
               </a>
@@ -123,13 +123,23 @@ function App() {
                 <p className="p-2 rounded-md shadow-md">Tailwind CSS</p>
               </div>
               <div className="flex flex-row gap-12 items-center font-semibold pt-8">
-                <a href="/" className="hover:text-blue">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/nagoudinada"
+                  className="hover:text-blue"
+                >
                   <div className="flex flex-row items-center gap-2">
                     <p>Code</p>
                     <BsGithub className="w-8 h-8" />
                   </div>
                 </a>
-                <a href="/" className="hover:text-blue">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="/"
+                  className="hover:text-blue"
+                >
                   <div className="flex flex-row items-center gap-2">
                     <p>Live Demo</p>
                     <MdScreenShare className="w-8 h-8" />
